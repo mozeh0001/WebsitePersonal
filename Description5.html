@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+    <!-- Background Particles Effect -->
+    <div class="container">
+        <canvas id="canvas2"></canvas>
+
+        <!-- Wrapper for Back Button & Project Content -->
+        <div class="content-wrapper">
+            <a href="MyPersonalWebsite.html#unity" class="back-button">Back to Projects</a>
+
+            <!-- Project Content -->
+            <div class="project-content">
+
+                <!-- Project Description -->
+                <div class="description">
+                    <h1 id="center-text">Venger</h1>
+                    <p>
+                        One of the lead contributors of Venger, a 3D first-person shooter thesis project that immerses players in a tense escape from mysterious pursuers within fictional Soviet-style apartments set in the 1990s. Inspired by Perturbator - Venger, the game is designed to challenge players both physically and emotionally, pushing them to endure extreme survival scenarios while overcoming fear and despair. As they grow stronger, developing skills and resilience, they transition from a state of fear and passivity to one of determination and aggression, embodying the spirit of Venger—never breaking down or giving up. Through this transformation, players experience an adrenaline rush, a sense of pride, and emotional empowerment. Collaborating with a nine-person team, including a director, designers, programmers, artists, and a narrative advisor, the project is currently in development from September 2024 to May 2025.
+                    </p>
+                    <br><br>
+                    <hr>
+                    <br><br>
+                    <div class="image-container">
+                        <p class="image-label2">Venger Trailer</p>
+                        <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/x_edH-hIWT8" 
+                        title="Civilian Event" frameborder="0" allowfullscreen>
+                    </iframe>
+                    </div>
+
+                    <br><br>
+                    <hr>
+                    <br><br>
+                    <div class="next-to-each">
+                         <img src="Images/Venger1.png" alt="Venger Preview 1" width="300" height="315">
+                        <img src="Images/Venger2.png" alt="Venger Preview 2" width="300" height="315">
+                        <img src="Images/Venger3.png" alt="Venger Preview 3" width="300" height="315">
+                    </div>
+            </div>
+
+
+            <div class="project-content">
+                <!-- Project Description -->
+                <div class="description">
+                    <h2>Level and Game Design</h2>
+                        <div class="pdf-container-venger">
+                            <div class="pdf-item">
+                                <h3 id="padding">Level Design Blueprints</h3>
+                                <iframe src="Level Design-Blueprint.pdf" width="100%" height="300px"></iframe>
+                            </div>
+
+                            <div class="pdf-item">
+                                <h3 id="padding">Enemy Types & Level Ideas</h3>
+                                <iframe src="Enemy Types & Design (Including Level Ideas).pdf" width="100%" height="300px"></iframe>
+                            </div>
+                        </div>
+                    <ul>
+
+                        <li>I had designed enemy behaviors and level layouts with a strong emphasis on light, shadow, and sound, where every encounter could mean life or death for the player.</li>
+                        <li>I promised environments that were ladybrinth and mostly dark, with some high-contrast scenes, making light a crucial tool for both survival and danger. Shadow can either conceal threats or offer safety, and sound plays a vital role in locating enemies, misleading them, or being misled by them as the game is designed to feel intense and high-stakes, with the player constantly balancing between awareness and reaction.</li>
+                        <li>My role was to create blueprints for levels that enhance these elements while also planning out enemy types that interact uniquely with their surroundings. </li>
+                        <li>Each enemy was designed to feel like a puzzle, requiring the player to gather information, process it quickly, and react in time rather than relying purely on shooting skills. </li>
+                        <li>I created blueprints and in a follow-up meeting I planned out enemy types corresponding to those levels. Task was involved to create levels that </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <!-- Project Description -->
+                <div class="description">
+                     <h2>Unity Engineering</h2>
+                     <div class="video-container">
+                        <p class="image-label2">SDF SFX</p>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/AD1Yp-3VQNY" 
+                            title="Civilian Event" frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <ul id="padding2">
+                        <li>Following up from the enemy designs I was tasked to create a vfx particle system that morphs the shape of the echo enemy (second character of enemy document). I added animations so that when placed in the level looks the the particles disappear and reappaer like dust taking form.</li>
+                        <li><b>How I made it:</b> I did SDF particle deformation through VFX Shader Graph by sampling a <b>Signed Distance Field (SDF)</b> to control particle positioning and movement. This allowed the particles to dynamically morph into the Echo enemy's shape. I applied <b>randomized noise and velocity adjustments</b> to create a fluid, shifting effect, making the particles appear as if they were dispersing and reforming in the air. Additionally, I integrated <b>animated lifetime values and force influences</b>, ensuring the particles dissolve and reassemble seamlessly, enhancing the illusion of a spectral, sound-based entity. The final effect makes the Echo enemy feel eerie and unpredictable when placed in a dimly lit environment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script> <!-- Ensure this includes the particle effect logic -->
+
+</body>
+</html>
+
+
