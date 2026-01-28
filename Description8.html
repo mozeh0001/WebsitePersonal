@@ -23,23 +23,36 @@
                 <!-- Project Description -->
                 <div class="description">
                     <h1>Iron Testament</h1>
-                    <h2>Programmer & Audio Designer</h2>
+                    <h2>UI Engineer | Gameplay Programmer & Audio Designer</h2>
                     <h2>Unity | C# | GarageBand | Wwise | Blender</h2>
                     <p>
-                       A game set to be showcased to the USC Games Expo, Iron Testament is a turn-based game made by Rat Economy, a group 19 of USC games students. You command a cohort of robots, each with unique abilities, to reclaim Earth from the AI robot uprising. Leading a sect of life-worshipping machines, players strategically utilize their strengths to outmaneuver enemy forces. Every battle requires careful planning, as position, abilities, and tactical decisions shape the outcome.  
+                       Iron Testament is a turn-based strategy game developed by Rat Economy, a team of 19 USC Games students, and showcased at the USC Games Expo. Players lead a sect of life-worshipping robots against an adversary AI uprising, using positioning and unique abilities to outmaneuver enemies through tactical, turn-based combat.
                     </p>
                 </div>
-                   <img src="Images/IronTestamentGameplay.png" alt="Iron Testament Game Preview" width="500" height="415">
+              <div class="video-container">
+                    <p class="image-label2">Gameplay</p>
+                    <iframe width="500" height="415" 
+                            src="https://www.youtube.com/embed/CX0Cask985U" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
             </div>
 
             <!-- Project Content -->
             <div class="project-content">
                 <!-- Project Description -->
                 <div class="description">
-                    <h1>Programming</h1>
-                    <h2>A* Pathfinding Algorithm</h2>
-                    <p> Throughout weekly and bi-weekly sprints, I made use of A* pathfinding so that players can move their units to desired spots on the grid and over time made use of the line renderer to follow through with what path they were going to take. These content from the team showcase the parts I have worked on.
-                    </p>
+                    <h1 id="center-text">Programming</h1>
+                    <h2 id="center-text">A* Pathfinding Algorithm</h2>
+                    <ul>
+                      <li>Worked through weekly and bi-weekly sprints to deliver features.</li>
+                      <li>Implemented A* pathfinding so players can move their units to desired grid spots.</li>
+                      <li>Added line renderer functionality to visualize the path units would follow.</li>
+                      <li>Collaborated with the team to showcase the specific gameplay systems I developed.</li>
+                    </ul>
                     <!-- Video Row Wrapper -->
                     <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
                         <div class="video-container" id="padding2">
@@ -72,26 +85,44 @@
                     </div>
                     <br><br>
                     <hr>
-                    <h2>Transparency Trigger Based on Raycast</h2>
+                    <h2 id="center-text">Transparency Trigger Based on Raycast</h2>
                      <div class="image-container">
                         <video width="200" height="315" controls>
                             <source src="Images/IMG_2993.mov" type="video/mp4">
                         </video>
-                          <p>The transparency effect is triggered when an object obstructs the direct line of sight between the camera and a unit, using a raycast to detect intersections, but it only activates when the camera is close to the object due to the raycast's range limitation.</p>
                     </div>
+                    <ul>
+                              <li>Implemented a transparency effect for objects obstructing the camera’s line of sight to a unit.</li>
+                              <li>Used raycasts to detect intersections between the camera and objects.</li>
+                              <li>Optimized the effect to only activate when the camera is close, accounting for raycast range limitations.</li>
+                        </ul>
                     <br><br>
                     <hr>
-                    <h2>Tile Indicators</h2>
-                    <p>I was also tasked to make patterns around the grid of the bots for attack or range repectively corresponding to the tiles highlted Manhattan or Euclidean so that the player knows how far they can use their abilities.</p>
+                    <h2 id="center-text">Tile Indicators</h2>
+                        <ul>
+                          <li>Created attack and range patterns around the bot grid.</li>
+                          <li>Implemented Manhattan and Euclidean tile highlighting to represent ability ranges.</li>
+                          <li>Enabled players to visualize how far their abilities could reach through grid highlights.</li>
+                        </ul>
                     <div class="image-container" id="padding2">
-                        <p class="image-label2">Tiles Highlighed Euclidean or Manhattan</p>
+                        <p class="image-label2">Tiles Highlighed Euclidean + Manhattan</p>
                         <img src="Images/EM.png" alt="Manhattan Euclidean Tiles" width="670" height="350">
                     </div>
                     <br><br>
                     <hr>
                      <div>
-                        <h2>Programming the UI</h2>
-                        <p>I was also responsible for creating UI such as health bars that billboard to the camera and display proposed health in cyan if damaged is dealed. If actual damage was dealed, it would lerp above the bots and I was also in charge of making an in-game console system that logs in game messages to appear in a scrollable console on the left side of the screen similar to that of Minecraft or Call of Duty; an in-game chat or log panel, allowing messages to be added from in-game activity, displayed with a fade-out effect, removed over time, and toggled between full history and recent logs while ensuring scroll-to-bottom functionality. For color I used Rich-Text.</p>
+                        <h2 id="center-text">Programming the UI</h2>
+                            <ul>
+                              <li>Developed health bars that billboard to the camera.</li>
+                              <li>Implemented a cyan preview for proposed health when damage is dealt.</li>
+                              <li>Added lerping health indicators above bots for actual damage.</li>
+                              <li>Built an in-game console system to log messages, similar to Minecraft or Call of Duty.</li>
+                              <li>Enabled scrolling, fade-out, and timed removal of log messages.</li>
+                              <li>Added toggle functionality between recent logs and full history.</li>
+                              <li>Ensured scroll-to-bottom behavior for continuous updates.</li>
+                              <li>Styled logs and text with Unity Rich-Text for color effects.</li>
+                            </ul>
+
                         <br><br>
                         <div class="next-to-each">
                             <!-- Add the flexbox container directly here -->
@@ -121,10 +152,13 @@
                      <br><br>
                     <hr>
                     <div id="padding2">
-                        <h2>Muzzle Flash Effect</h2>
-                        <p>
-                            For one of the sprints, I used Photoshop to draw the flash and Blender to model the muzzle mesh. I turned it into a VFX effect, and this was used for one of the units, the Reaper, abilities.
-                        </p>
+                        <h2 id="center-text">Muzzle Flash Effect</h2>
+                       <ul>
+                          <li>Used Photoshop to design the muzzle flash.</li>
+                          <li>Modeled the muzzle mesh in Blender.</li>
+                          <li>Combined assets into a VFX effect.</li>
+                          <li>Implemented the effect for the Reaper unit’s abilities.</li>
+                        </ul>
                         <br><br>
                         <!-- Flexbox container -->
                         <div id="project-content" style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
@@ -154,10 +188,15 @@
 
                 <!-- Project Description -->
                 <div class="description">
-                    <h2>Audio Design</h2>
-                    <p>
-                        For the Purifier mission, I was responsible for composing a techno-synth-based soundtrack that dynamically transitions between active and passive states based on gameplay. I created prototypes of metallic clanging effects and futuristic weapon sounds to align with the faction's militant and electronic aesthetic. The music shifts into an active version when combat begins and returns to a passive state when no attacks occur, ensuring a seamless auditory experience. This system was designed for integration into Wwise, allowing for real-time audio transitions within Unity, enhancing immersion and responsiveness to player actions.
-                    </p>
+                    <h2 id="center-text">Audio Design</h2>
+                        <ul>
+                          <li>Composed a techno-synth soundtrack tailored to the Purifier faction.</li>
+                          <li>Designed metallic clanging effects and futuristic weapon sounds to match the militant, electronic aesthetic.</li>
+                          <li>Implemented dynamic transitions between passive and active states based on combat.</li>
+                          <li>Integrated the system into Wwise for real-time audio transitions within Unity.</li>
+                          <li>Enhanced immersion and responsiveness by aligning music with player actions.</li>
+                        </ul>
+
                     <br><br>
                     <hr>
                     <br><br>
@@ -166,13 +205,13 @@
                     <!-- Video Row Wrapper -->
                     <div class="next-to-each">
 
-                        <div class="video-container">
+ <!--                        <div class="video-container">
                             <p class="image-label2">Purifier passive and active tracks I composed in GarageBand, integrated into Unity gameplay.</p>
                             <iframe width="560" height="315" 
                                 src="https://www.youtube.com/embed/5v5a7odeUP0?start=36" 
                                 title="Song in Unity Iron Testament Gameplay" frameborder="0" allowfullscreen>
                             </iframe>
-                        </div>
+                        </div> -->
 
                         <div class="video-container">
                             <p class="image-label2" id="pdding">Active purifier sound in Wwise</p>
@@ -187,7 +226,9 @@
                     <br><br>
                     <hr>
                     <br><br>
-                    <p id="colored-p"><b>These audio sounds I designed were done in layers for enhanced sound:</b></p>
+                    <div id="center-text">
+                        <p id="colored-p"><b>These audio sounds I designed were done in layers for enhanced sound:</b></p>
+                    </div>
                     <p><b>Metal Impact:</b></p>
                     <br><br>
                     <audio controls>

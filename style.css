@@ -12,7 +12,6 @@ body {
 /* Section styling */
 .section {
     padding: 20px;
-    height: 60vh;
     box-sizing: border-box;
     color: black;
     background-color: green;
@@ -315,17 +314,29 @@ span {
     color: white; /* White text for readability */
 }
 
-.coursework-container {
-    display: grid; /* Enables CSS Grid layout */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    /* Creates a responsive grid with columns that are at least 300px wide */
-    gap: 20px; /* Adds space between project cards */
-    padding: 20px; /* Adds padding around the grid */
-    justify-items: center; /* Centers grid items horizontally */
+#research {
+      text-align: center; /* Centers the section heading and content */
+    padding: 50px; /* Adds space around the section */
+    background-color: #111; /* Dark background for contrast */
+    color: white; /* White text for readability */
+}
+
+#product-design {
+      text-align: center; /* Centers the section heading and content */
+    padding: 50px; /* Adds space around the section */
+    background-color: darkgreen; /* Dark background for contrast */
+    color: white; /* White text for readability */
+}
+
+/* ===== GAME JAMS SECTION STYLING ===== */
+#game-jams {
+    text-align: center; /* Centers the section heading and content */
+    padding: 50px; /* Adds space around the section */
+    background-color: #111; /* Dark background for contrast */
+    color: white; /* White text for readability */
 }
 
 /* ===== PROJECTS SECTION STYLING ===== */
-
 #projects {
     text-align: center; /* Centers the section heading and content */
     padding: 50px; /* Adds space around the section */
@@ -334,7 +345,7 @@ span {
 }
 
 /* ==== GRID CONTAINER FOR PROJECT CARDS ==== */
-.projects-container {
+.card-container {
     display: grid; /* Enables CSS Grid layout */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     /* Creates a responsive grid with columns that are at least 300px wide */
@@ -357,7 +368,7 @@ span {
 
 /* ==== PROJECT IMAGE ==== */
 .project img {
-    width: 100%; /* Ensures the image takes full width of the card */
+    max-width: 100%; /* Ensures the image takes full width of the card */
     border-radius: 5px; /* Slightly rounds the corners of the image */
 }
 
@@ -397,7 +408,7 @@ span {
 }
 
 .about-content p {
-    font-size: 30px; /* Adjust as needed */
+    font-size: 20px; /* Adjust as needed */
     color: white;
 }
 
@@ -805,6 +816,83 @@ span {
 .top-padding {
     padding-top: 20px;
 }
+
+.brainstorm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 20px;
+  justify-items: center; /* center images in their cells */
+}
+
+.image-container2 img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.wwise-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.image-container {
+  flex: 1 1 300px; /* each container takes ~300px but can shrink/grow */
+  text-align: center;
+}
+
+.wwise-img {
+  width: 100%;    /* responsive scaling */
+  height: auto;   /* keeps aspect ratio */
+  max-width: 350px; /* optional: cap size on large screens */
+  border-radius: 6px; /* optional styling */
+}
+
+.watergun-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.watergun-grid img { width: 100%; height: auto; }
+
+.toy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.toy-grid .card { text-align: center; max-width: 320px; }
+
+.toy-grid img,
+.toy-grid video {
+  width: 100%;
+  height: auto;          /* keep aspect ratio */
+  display: block;
+  border-radius: 6px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;   /* center the whole row */
+  gap: 20px;                 /* space between images */
+  flex-wrap: wrap;           /* allow wrapping on smaller screens */
+}
+
+.image-container {
+  text-align: center;        /* centers the labels with images */
+}
+
+.images-display {
+  display: flex;
+  justify-content: flex-start; /* remove centering, pack left */
+  gap: 10px;                   /* only 10px between */
+  align-items: flex-start;
+}
+
 
 
 

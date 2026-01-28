@@ -23,22 +23,25 @@
                 <!-- Project Description -->
                 <div class="description">
                     <h1 id="center-text">Bridge Breakout Mobile Game</h1>
-                    <h2 id="center-text">Personal Project | Unity | C# | Blender</h2>
+                    <h2 id="center-text">Personal Project | Unity | C# | Blender | Gameplay Mechcanics, Systems, UI input and AI Engineer</h2>
                     <hr>
-                    <br><br>
+                    <h2 id="center-text">Overview</h2>
                     <p id="padding">
                       Bridge Breakout is an action-adventure game of 5 levels each 2 minutes long where you use a grappling hook to travel across highways and stop bandits from attacking bridges. Your goal is to protect the roads, prevent cars from falling, and take down enemies trying to cause destruction. Swing between broken sections, fight off threats, and keep the highways safe!
                     </p>
+                    <ul id="padding2">
+                        <li>I created this mobile game in Unity. I planned and designed the levels in Blender, and all assets and scripts are original, including the skybox, except for the modeled bandits.</li>
+                    </ul>
                     <div class="video-container">
-                        <p class="image-label2">Bridge Breakout Gameplay</p>
+                        <p class="image-label2">Gameplay</p>
                         <iframe width="560" height="315" 
                             src="https://www.youtube.com/embed/yKqvZEZsfmU" 
                             title="Bridge Breakout Gameplay" frameborder="0" allowfullscreen>
                         </iframe>
                     </div>
-                    <p id="padding2"><b>I created this mobile game in Unity. I planned and designed the levels in Blender, and all assets and scripts are original, including the skybox, except for the modeled bandits.</b></p>
                     <br><br>
                     <hr>
+                    <h2 id="center-text">UI + Input</h2>
                     <ul id="padding2">
                         <li>UI of bridge health goes down if cars fall into water or bridge columns are attacked. Left joystick controls movement and right joystick controls camera. Crosshair turns red if enemy in sight and attack button works as followed. Tap on screen to use grapple hook.</li>
                         <li>Line renderer animates for the grappling hook using sin.</li>
@@ -52,6 +55,7 @@
                             </div>
                         <br><br>
                         <hr>
+                        <h2 id="center-text">Visual Effects (VFX)</h2>
                         <li id="padding2">Used VFX graph to create water splashes when cars fall with physics-based collisions and particle system to make fire + explosions. Body of water is also using shader graph.</li>
                         <div class="video-container">
                              <p class="image-label2">Water Splash VFX</p>
@@ -62,6 +66,7 @@
                         </div>
                         <br><br>
                         <hr>
+                        <h2 id="center-text">Level Design</h2>
                         <li id="padding2">Created the highways, buildings using blender</li>
                         <div class="video-container">
                             <p class="image-label2" id="padding2">Inspired Level Design. I modeled curved roads in blender and freeway signs.</p>
@@ -69,6 +74,7 @@
                         </div>
                         <br><br>
                         <hr>
+                        <h2 id="center-text">State Machine + AI Travel</h2>
                         <li id="padding2">Made the enemy state machine that relies heavily on the navmesh and can jump across bridges and highways using Navmesh links animations sync with jumps.</li>
                         <li>Created an enemy state machine to transition between attacking player, road segements, and bridge columns and patroling.</li>
                         <div class="inline-container">
@@ -83,6 +89,7 @@
                         </div>
                         <br><br>
                         <hr>
+                        <h2 id="center-text">Optimizing Data</h2>
                         <li id="padding2">I created a waypoint system for cars to traverse realistically while using object pooling to turn them inactive for good memory usage in Unity's garbadge collector.</li>
                         <div class="inline-container">
                             <div class="inline-item">
